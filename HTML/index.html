@@ -1,39 +1,139 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<title>
-		HTML page - basic
-	</title>
+	<title>Joe's coffee house landing page</title>
+	<base href="F:\Work\Web\Test-WebPage\HTML\">
+	<link rel="stylesheet" type="text/css" href=".\..\Styles\Layout.css">
+	
 </head>
 <body>
-	<h1>HTML lists</h1>
+	<header>
+		<div>
+			<a class="headerlogo" href="index.html">
+				<img src=".\..\images\logo.png" alt="Logo not found">
+			</a>
+			<span id="headername">Joe's Coffee House</span>
+			<input type="search" class="searchbox" placeholder="Search our Store" />
+		</div>
+	</header>
 
-	<table border="1" summary="Table that shows different type of list elements">
-		<caption>List elements table</caption>
-		<thead>
-			<tr>
-				<th>List types</th>
-				<th>Tags</th>
-				<th>Uses</th>
-			</tr>
-		</thead>
-		<tfoot>
-			<tr>
-				<td colspan="3">Lists can be styled in many different ways</td>
-			</tr>
-		</tfoot>
-		<tbody>
-			<tr>
-				<td>Unordered lists</td>
-				<td>&lt;ul&gt;,&lt;li&gt;</td>
-				<td rowspan="2">Used to display simple list properties</td>
-			</tr>
-			<tr>
-				<td>Ordered lists</td>
-				<td>&lt;ol&gt;,&lt;li&gt;</td>
-			</tr>
-		</tbody>
-	</table>
+	<div id="welcomeimage">
+		<img src=".\..\images\coffeeheader.png">
+	</div>
+	<div id="coffeeofthemonth">
+		<!--<figure>-->
+		<img src=".\..\images\cotm.png" />
+		<!--<figcaption>Coffee of the month</figcaption>
+		</figure>-->	
+	</div>
 
+	<section id="welcometext"> 
+		<header>Welcome to Joe's Coffee House</header>
+		<span>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vel iaculis nisi. Morbi consectetur tempor ligula eget imperdiet. Duis id odio eget erat maximus cursus. 
+			Vivamus accumsan eget libero vel tempor. Maecenas congue felis ut quam faucibus semper. Etiam non dolor vel nisl venenatis feugiat quis lobortis velit. Curabitur volutpat tellus eu lectus efficitur, id bibendum velit sollicitudin. 
+			<p><mark>Store is closed on Christmas</mark></p>
+		</span>
+
+	</section>
+
+	<aside id="events">
+		<header>Here's what's new!</header>
+		<ul>
+			<li><a href="#">New Arabica coffee added</a></li>
+			<li><a href="#">Store redecorated</a></li>
+			<li><a href="#">New website launched</a></li>	
+		</ul>
+	</aside>
+
+	<section id="bestsellers">
+		<header>Bestsellers @ Joe's Coffee House</header>
+			<section class="coffeebestsellers">
+				<header class="backgroundgradient">Coffees</header>
+				<article class="productarticle">
+					<figure>
+						<img class="productarticlethumbnail" src="./../images/coffeelogo.png" alt="Coffeelogo not present" />
+					</figure>					
+					<header>
+						<span class="productarticlename"><a href="coffeedetails.html">Coffee 1</a></span>
+					</header>
+					<p class="productarticleprice">$10</p>
+					<div class="addtocartbutton" id="myAddToCartButton">
+						Add to cart
+					</div>
+				</article>
+				<article class="productarticle">
+					<figure>
+						<img class="productarticlethumbnail" src="./../images/coffeelogo.png" alt="Coffeelogo not present" />
+					</figure>					
+					<header>
+						<span class="productarticlename"><a href="coffeedetails.html">Coffee 2</a></span>
+					</header>
+					<p class="productarticleprice">$15</p>
+					<div class="addtocartbutton" id="myAddToCartButton">
+						Add to cart
+					</div>
+				</article>
+				<article class="productarticle">
+					<figure>
+						<img class="productarticlethumbnail" src="./../images/coffeelogo.png" alt="Coffeelogo not present" />
+					</figure>					
+					<header>
+						<span class="productarticlename"><a href="coffeedetails.html">Coffee 3</a></span>
+					</header>
+					<p class="productarticleprice">$20</p>
+					<div class="addtocartbutton" id="myAddToCartButton">
+						Add to cart
+					</div>
+				</article>
+			</section>
+
+			<section class="accessoriesbestsellers">
+				<header class="backgroundgradient">Accessories</header>
+				<article class="productarticle">
+					<figure>
+						<img class="productarticlethumbnail" src="./../images/accessorieslogo.png" alt="Accessorieslogo not present" />
+					</figure>					
+					<header>
+						<span class="productarticlename"><a href="accessoriesdetails.html">Accessory 1</a></span>
+					</header>
+					<p class="productarticleprice">$10</p>
+					<div class="addtocartbutton" id="myAddToCartButton">
+						Add to cart
+					</div>
+				</article>
+				<article class="productarticle">
+					<figure>
+						<img class="productarticlethumbnail" src="./../images/accessorieslogo.png" alt="Accessorieslogo.png not present" />
+					</figure>					
+					<header>
+						<span class="productarticlename"><a href="accessoriesdetails.html">Accessory 2</a></span>
+					</header>
+					<p class="productarticleprice">$15</p>
+					<div class="addtocartbutton" id="myAddToCartButton">
+						Add to cart
+					</div>
+				</article>
+				<article class="productarticle">
+					<figure>
+						<img class="productarticlethumbnail" src="./../images/accessorieslogo.png" alt="Accessorieslogo.png not present" />
+					</figure>					
+					<header>
+						<span class="productarticlename"><a href="accessoriesdetails.html">Accessory 3</a></span>
+					</header>
+					<p class="productarticleprice">$20</p>
+					<div class="addtocartbutton" id="myAddToCartButton">
+						Add to cart
+					</div>
+				</article>
+			</section>
+	</section>
+
+	<footer>
+		<p>Our address is <address>409, Adithya Elixir</address></p>
+		<p class="textcontent">All site contents is copyright <a class="mainlink" href="http://www.w3.org/1999/xhtml">W3 standard</a></p>
+		<p class="smalltext">This page was generated at: <time>16:20:45.87</time></p>
+	</footer>
+	<script type="text/javascript" src=".\..\scripts\myScript.js"></script>
 </body>
 </html>
